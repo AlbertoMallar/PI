@@ -10,7 +10,7 @@ export const ORDEN_ALFABETICO = 'ORDEN_ALFABETICO';
 export const GAMES_ORIGIN = 'GAMES_ORIGIN';
 export const GAMES_RATING = 'GAMES_RATING';
 
-const URL = "http://localhost:3001"
+const URL = "https://videogamesbackend.onrender.com"
 axios.defaults.baseURL = URL;
 
 export const getGames = () => { //como es de redux no puede hacer una operacion asincrona
