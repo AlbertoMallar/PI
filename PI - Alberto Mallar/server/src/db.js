@@ -3,10 +3,10 @@ require('dotenv').config() //importo esta dependencia para poder leer las variab
 const gamesModels  = require('./models/gamesModels');
 const genreModels  = require('./models/genreModels');
 
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} = process.env //funcion disponible gracias a dotenv
+const { INTERNAL_DATABASE_URL } = process.env //funcion disponible gracias a dotenv
 //const sequelize = new Sequelize('postgres://user:[pass@example.com:5432/dbname')
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`,
+const sequelize = new Sequelize(INTERNAL_DATABASE_URL,
  {logging: false}
  );
 
