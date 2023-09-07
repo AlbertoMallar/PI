@@ -10,7 +10,7 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
  {logging: false}
  );
 
- gamesModels(sequelize); // definimos en la instancia de sequielize en la base de datos
+ gamesModels(sequelize); // definimos los modelos en la instancia de sequielize en la base de datos
  genreModels(sequelize);
 
  // Formar las relaciones. Un juego muchas plataformas una plataforma muchos juegos.
