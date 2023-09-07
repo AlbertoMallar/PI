@@ -1,0 +1,22 @@
+.paginationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; 
+}
+  
+  .paginationContainer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .paginationContainer button {
+    background-color: green;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }

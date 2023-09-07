@@ -1,0 +1,51 @@
+.searchBarContainer{
+    display: flex;
+    flex-direction: row;
+    border: transparent;
+    border-radius: 15px;
+    outline: none;
+    justify-content: space-around;
+    padding: 10px;
+    width: 800px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 50px; 
+    border: 1px solid rgb(240, 15, 15);
+    background-color: transparent;
+    color: rgb(59, 28, 28);
+    font-family: "Bigelow Rules";
+    font-size: 20px;
+    -webkit-text-stroke: 2px rgb(104, 19, 19);
+    -webkit-text-fill-color: transparent;
+    animation: textShadowAnimation 2s infinite;
+  }
+  
+  @keyframes textShadowAnimation {
+    0% {
+      text-shadow: 0 0 10px rgb(255, 70, 70);
+    }
+    50% {
+      text-shadow: 0 0 2px rgb(112, 8, 8);
+    }
+    100% {
+      text-shadow: 0 0 10px transparent;
+    }
+  }
+  
+
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; 
+    height: 50px; 
+    border: 1px solid rgb(192, 12, 12);
+    background-color: transparent;
+}
