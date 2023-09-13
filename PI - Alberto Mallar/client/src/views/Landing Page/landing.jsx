@@ -6,7 +6,7 @@ function Landing() {
     <div>
       <p className='landingTitle'> Welcome to Metal Games!!!</p>
       <button className='botondeinicio'>
-        <Link className='estiloLinks' to='/home'> Watch all games!</Link>
+        <Link className='estiloLinks' to='/home'>🔍</Link>
       </button>
     </div>
   );
