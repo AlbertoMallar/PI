@@ -41,7 +41,7 @@ function Home() {
   return (
     <div> {loading ? (<Load />) : (
     <div className='homeContainer'>
-      <h2 className='homeText'> Metal Games Home</h2>
+      <h2 className='homeText'> Metal Games Home </h2>
       <Navbar />
       <Cards />
 

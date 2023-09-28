@@ -20,6 +20,7 @@ function Detail() {
         <div className='detailContainer' style={{
           backgroundImage: `url(${game.background_image})`,
           backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
         }}>
           <Link to='/home' className='estiloLink'> Back Home </Link>

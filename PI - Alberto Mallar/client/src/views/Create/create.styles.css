@@ -22,7 +22,16 @@
 
 .formText {
     font-family: "Homer Simpson UI";
-    -webkit-text-stroke: 2px rgb(165, 40, 36);
+    -webkit-text-stroke: 2px rgb(33, 167, 47);
+    -webkit-text-fill-color: transparent;
+    animation: textShadowAnimation 2s infinite;
+    font-size: larger;
+
+}
+
+.errorText{
+  font-family: "Homer Simpson UI";
+    -webkit-text-stroke: 2px rgb(143, 39, 18);
     -webkit-text-fill-color: transparent;
     animation: textShadowAnimation 2s infinite;
     font-size: larger;

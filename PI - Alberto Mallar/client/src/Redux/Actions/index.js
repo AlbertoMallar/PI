@@ -11,6 +11,7 @@ export const GAMES_ORIGIN = 'GAMES_ORIGIN';
 export const GAMES_RATING = 'GAMES_RATING';
 
 const URL = "https://videogamesbackend.onrender.com"
+// const URL = "http://localhost:3001"
 axios.defaults.baseURL = URL;
 
 export const getGames = () => { //como es de redux no puede hacer una operacion asincrona

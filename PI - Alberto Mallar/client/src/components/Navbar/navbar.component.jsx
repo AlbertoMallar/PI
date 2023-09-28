@@ -73,7 +73,7 @@ function Navbar() {
       <Link to='/create' className='linksContainer'>POST GAME</Link>
       <div className='filterContainer'>
 
-        <select name='Genres' onChange={filterHandler}>
+        <select className='selectContainer' name='Genres' onChange={filterHandler}>
           <optgroup label="Géneros">
             <option value='AllGenres'>Géneros</option>
             {genres?.map(genre => (
@@ -86,7 +86,7 @@ function Navbar() {
       <div className='filterContainer'>
         <h4> </h4>
 
-        <select onChange={orderHandler}>
+        <select className='selectContainer' onChange={orderHandler}>
           <optgroup label='Orden'>
             <option value='Default'>Orden</option>
           </optgroup>
@@ -97,7 +97,7 @@ function Navbar() {
       </div>
       <div className='filterContainer'>
 
-        <select name='Rating' onChange={ratingHandler}>
+        <select className='selectContainer' name='Rating' onChange={ratingHandler}>
           <optgroup label="Rating">
             <option value='Default'>Rating</option>
             <option value='menor'>Menor Rating</option>
@@ -108,7 +108,7 @@ function Navbar() {
       </div>
       <div className='filterContainer'>
 
-        <select name='Origen' onChange={filterOrigin}>
+        <select className='selectContainer' name='Origen' onChange={filterOrigin}>
           <optgroup label="Origen">
             <option value='All'>All</option>
             <option value='api'>API</option>
@@ -118,8 +118,8 @@ function Navbar() {
 
       </div>
       <form onSubmit={searchButtonHandler}>
-        <input placeholder="VideoGame 🔍" type='search' value={search} onChange={inputSearchHandler} />
-        <button type='Submit' >Buscar</button>
+        <input className='selectContainer' placeholder="VideoGame 🔍" type='search' value={search} onChange={inputSearchHandler} />
+        <button className='buttonContainer' type='Submit' >Buscar</button>
       </form>
     </div>
   );

@@ -186,7 +186,7 @@ function Create() {
               value={form.name}
               onChange={changeHandler}
               name='name' />
-            {errors.name && <span className='formText'>{errors.name}</span>}
+            {errors.name && <span className='errorText'>{errors.name}</span>}
           </div>
           <div>
             <label className='formText'> Image: </label>
@@ -196,7 +196,7 @@ function Create() {
               value={form.background_image}
               onChange={changeHandler}
               name='background_image' />
-            {errors.background_image && <span className='formText'>{errors.background_image}</span>}
+            {errors.background_image && <span className='errorText'>{errors.background_image}</span>}
           </div>
         </div>
         <div>
@@ -207,7 +207,7 @@ function Create() {
             value={form.description}
             onChange={changeHandler}
             name='description' />
-          {errors.description && <span className='formText'>{errors.description}</span>}
+          {errors.description && <span className='errorText'>{errors.description}</span>}
         </div>
         <div>
           <label className='formText'> Plataformas: </label>
@@ -216,7 +216,7 @@ function Create() {
             type='text' value={form.platforms}
             onChange={changeHandler}
             name='platforms' />
-          {errors.platforms && <span className='formText'>{errors.platforms}</span>}
+          {errors.platforms && <span className='errorText'>{errors.platforms}</span>}
         </div>
         <div>
           <label className='formText'> Fecha de lanzamiento: </label>
@@ -226,7 +226,7 @@ function Create() {
             value={form.released}
             onChange={changeHandler}
             name='released' />
-          {errors.released && <span className='formText'>{errors.released}</span>}
+          {errors.released && <span className='errorText'>{errors.released}</span>}
         </div>
         <div>
           <label className='formText'> Rating: </label>
@@ -236,7 +236,7 @@ function Create() {
             value={form.rating}
             onChange={changeHandler}
             name='rating' />
-          {errors.rating && <span className='formText'>{errors.rating}</span>}
+          {errors.rating && <span className='errorText'>{errors.rating}</span>}
         </div>
         <div className="genreContainer">
           {allGenres?.map((genre) => (
