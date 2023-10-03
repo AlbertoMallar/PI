@@ -1,4 +1,5 @@
 import React from "react";
+import './Pagination.styles.css'
 
 const Pagination = ({ gamesPerPage, totalGames, paginated }) => {
     const pageNumbers = [];
@@ -12,7 +13,7 @@ const Pagination = ({ gamesPerPage, totalGames, paginated }) => {
         <div className="paginationContainer">
             <ul>
                 {pageNumbers.length ? pageNumbers.map(number => (
-                    <button key={number}>
+                    <button key={number} className="pageNumber">
                         <a 
                         onClick={(e) => {
                             e.preventDefault()

@@ -34,14 +34,14 @@ body {
   font-size: 100px;
   color: rgb(223, 104, 8);
   font-family: "Bigelow Rules";
-  -webkit-text-stroke: 2px black;
+  -webkit-text-stroke: 2px rgb(112, 9, 9);
   -webkit-text-fill-color: transparent;
   animation: textShadowAnimation 2s infinite;
 }
 
 @keyframes textShadowAnimation {
   0% {
-    text-shadow: 0 0 10px rgb(223, 104, 8);
+    text-shadow: 0 0 10px rgb(240, 13, 13);
   }
   50% {
     text-shadow: 0 0 2px rgba(209, 25, 25, 0.5);
